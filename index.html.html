@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Conversion and Calculation Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Conversion and Calculation Tools</h1>
+
+    <section>
+        <h2>Lbs to Kg Converter</h2>
+        <form id="lbsToKgForm">
+            <label for="lbsInput">Enter weight in Pounds (lbs):</label>
+            <input type="number" id="lbsInput" placeholder="e.g. 150" />
+            <input type="button" id="convertBtn" value="Convert to Kg" />
+            <p>Weight in Kilograms: <output id="kgResult"></output></p>
+        </form>
+    </section>
+
+    <section>
+        <h2>Basic Calculator</h2>
+        <form id="calculatorForm">
+            <input type="text" name="num1" id="num1" placeholder="Enter number 1" />
+            <input type="text" name="num2" id="num2" placeholder="Enter number 2" />
+            <select name="operator" id="operator">
+                <option value="None">None</option>
+                <option value="Add">Add</option>
+                <option value="Subtract">Subtract</option>
+                <option value="Multiply">Multiply</option>
+                <option value="Divide">Divide</option>
+            </select>
+            <br>
+            <button type="submit" name="submit" value="submit">Calculate</button>
+            <p>Result: <output id="calcResult"></output></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
